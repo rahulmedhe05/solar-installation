@@ -97,6 +97,7 @@ export const getBusinessBySlug = (slug: string): BusinessConfig | undefined => {
 
 export const getAreaDisplayName = (area: string): string => {
   const areaNames: Record<string, string> = {
+    "vadodara": "Vadodara",
     "solar-installation-in-vadodara": "Vadodara",
     "solar-installation-in-alkapuri-vadodara": "Alkapuri",
     "solar-installation-in-akota-vadodara": "Akota",

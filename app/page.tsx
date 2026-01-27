@@ -4,7 +4,7 @@ import { BusinessPageTemplate } from "@/components/business-page-template";
 import { Metadata } from "next";
 
 const business = getBusinessBySlug("solar-installation")!;
-const content = getBusinessContent("solar-installation", "vadodara");
+const content = getBusinessContent("solar-installation", "solar-installation-in-vadodara");
 
 export const metadata: Metadata = {
   title: `#1 Solar Panel Installation in Vadodara | ₹78,000 Subsidy | SolarVadodara`,
@@ -49,5 +49,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return <BusinessPageTemplate business={business} area="vadodara" content={content} />;
+  return <BusinessPageTemplate business={business} area="solar-installation-in-vadodara" content={content} />;
 }

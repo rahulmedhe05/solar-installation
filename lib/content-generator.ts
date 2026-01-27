@@ -59,7 +59,7 @@ export function getSolarInstallationContent(area: string): PageContent {
   
   // Fallback to generated content
   const areaName = getAreaDisplayName(area);
-  const isMainVadodara = area === "solar-installation-in-vadodara" || areaName === "Vadodara";
+  const isMainVadodara = area === "solar-installation-in-vadodara" || area === "vadodara" || areaName === "Vadodara";
   const locationText = isMainVadodara ? "Vadodara" : `${areaName}, Vadodara`;
   
   return {

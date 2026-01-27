@@ -19,17 +19,17 @@ const blogSlugs = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date().toISOString();
 
-  // Homepage
+  // Homepage - Highest priority
   const homepage: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: currentDate,
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily',
       priority: 1.0,
     },
   ];
 
-  // Area pages (40 pages) - High priority local pages
+  // Area pages (40 pages) - High priority local SEO pages
   const areaPages: MetadataRoute.Sitemap = vadodaraAreas.map((area) => ({
     url: `${baseUrl}/${area}`,
     lastModified: currentDate,
@@ -37,12 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  // Keyword pages (67 pages) - High priority service pages
+  // Keyword/Service pages (67 pages) - High priority service pages
   const keywordPages: MetadataRoute.Sitemap = solarKeywords.map((keyword) => ({
     url: `${baseUrl}/${keyword.slug}`,
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    priority: 0.85,
   }));
 
   // Blog index page
@@ -55,23 +55,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Individual blog posts - High priority content
+  // Individual blog posts - Content marketing pages
   const blogPostPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: currentDate,
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: 0.75,
   }));
 
-  // Leads page
-  const leadPages: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/leads`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.3,
-    },
+  // Combine all pages
+  return [
+    ...homepage,
+    ...areaPages,
+    ...keywordPages,
+    ...blogIndexPage,
+    ...blogPostPages,
   ];
-
-  return [...homepage, ...areaPages, ...keywordPages, ...blogIndexPage, ...blogPostPages, ...leadPages];
 }

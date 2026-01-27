@@ -1,35 +1,90 @@
 # Robots.txt for SolarVadodara.in
-# Solar Installation Website - Vadodara, Gujarat
+# Solar Panel Installation Services - Vadodara, Gujarat
+# Last Updated: January 2026
 
+# Default rules for all crawlers
 User-agent: *
 Allow: /
-
-# Sitemap location
-Sitemap: https://solarvadodara.in/sitemap.xml
-
-# Crawl delay for polite crawling
 Crawl-delay: 1
 
-# Block admin/api routes if any
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
+# Sitemap locations
+Sitemap: https://solarvadodara.in/sitemap.xml
 
-# Allow all search engines
+# Block internal/system paths
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /_next/image/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /private/
+
+# Allow important static assets
+Allow: /_next/static/css/
+Allow: /_next/static/js/
+Allow: /images/
+Allow: /blog/
+
+# Google
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /blog/
+
+User-agent: Googlebot-News
+Allow: /blog/
+
+# Bing
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+# Yahoo
 User-agent: Slurp
 Allow: /
 
+# DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
 
+# Baidu (China)
 User-agent: Baiduspider
 Allow: /
 
+# Yandex (Russia)
 User-agent: YandexBot
 Allow: /
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterestbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Host directive
+Host: https://solarvadodara.in

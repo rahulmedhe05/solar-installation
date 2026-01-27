@@ -136,7 +136,10 @@ export function KeywordPageTemplate({ business, keyword, content }: KeywordPageT
                 About {keyword.title}
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <p className="whitespace-pre-line">{content.aboutContent}</p>
+                <div 
+                  className="whitespace-pre-line"
+                  dangerouslySetInnerHTML={{ __html: content.aboutContent }}
+                />
                 
                 {/* SEO Keyword Density - 3 natural mentions */}
                 <p className="mt-4">

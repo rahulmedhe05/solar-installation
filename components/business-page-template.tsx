@@ -148,7 +148,10 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
                 About Our {business.name} Services in {areaName}
               </h2>
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <p className="whitespace-pre-line">{content.aboutContent}</p>
+                <div 
+                  className="whitespace-pre-line"
+                  dangerouslySetInnerHTML={{ __html: content.aboutContent }}
+                />
               </div>
             </div>
             <div className="order-1 md:order-2">
@@ -347,7 +350,10 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
                   {business.name} in {areaName} - Local Expertise
                 </h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  <p className="whitespace-pre-line">{content.areaSpecificContent}</p>
+                  <div 
+                    className="whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ __html: content.areaSpecificContent }}
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">

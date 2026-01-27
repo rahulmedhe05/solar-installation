@@ -3,31 +3,44 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Sparkles, MessageCircle } from "lucide-react"
+import { Sun, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react"
 import { addLead } from "@/lib/leads"
 
 const slides = [
   {
     id: 1,
-    title: "Crafting Dream Interiors",
-    subtitle: "Bangalore's Trusted Interior Designers",
-    description: "Transforming homes, offices, and commercial spaces across Bangalore with stunning interior designs",
-    image: "/Slider1.png",
+    title: "Go Solar, Save More",
+    subtitle: "Vadodara's Trusted Solar Installer",
+    description: "Premium solar panel installation for homes & businesses. Up to ₹78,000 government subsidy available.",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1920&auto=format&fit=crop",
   },
   {
     id: 2,
-    title: "Elegant Living Spaces",
-    subtitle: "Where Style Meets Comfort",
-    description: "Contemporary interior design blending functionality with aesthetic excellence for Bangalore homes",
-    image: "/Slider2.png",
+    title: "Rooftop Solar Solutions",
+    subtitle: "Power Your Home with Sunshine",
+    description: "1kW to 10kW residential solar systems. Generate free electricity for 25+ years.",
+    image: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1920&auto=format&fit=crop",
   },
   {
     id: 3,
-    title: "End-to-End Design Solutions",
-    subtitle: "Your Vision, Our Expertise",
-    description: "Complete interior solutions from concept development to flawless execution in Bangalore",
-    image: "/Slider3.png",
+    title: "Commercial & Industrial Solar",
+    subtitle: "Reduce Business Electricity Costs",
+    description: "10kW to MW scale solar power plants for factories, warehouses & offices in GIDC Vadodara.",
+    image: "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=1920&auto=format&fit=crop",
+  },
+  {
+    id: 4,
+    title: "Net Metering Experts",
+    subtitle: "Export Power, Earn Credits",
+    description: "Complete DGVCL net metering assistance. Zero electricity bills possible with proper sizing.",
+    image: "https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?q=80&w=1920&auto=format&fit=crop",
+  },
+  {
+    id: 5,
+    title: "PM Surya Ghar Yojana",
+    subtitle: "Government Subsidy Available",
+    description: "Get up to ₹78,000 subsidy on residential solar. MNRE approved installer. Free registration help.",
+    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1920&auto=format&fit=crop",
   },
 ]
 
@@ -37,8 +50,8 @@ export function HeroSlider() {
     fullName: "",
     phoneNumber: "",
     propertyType: "",
-    budget: "",
-    city: "",
+    monthlyBill: "",
+    area: "",
   })
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -49,24 +62,24 @@ export function HeroSlider() {
       fullName: formData.fullName,
       phoneNumber: formData.phoneNumber,
       propertyType: formData.propertyType,
-      budget: formData.budget,
-      city: formData.city,
+      budget: formData.monthlyBill,
+      city: formData.area,
     })
 
     const message = `
-✨ *INTERIOR DESIGN ENQUIRY* ✨
+☀️ *SOLAR INSTALLATION ENQUIRY* ☀️
 
 • *Full Name:* ${formData.fullName}
 • *Phone Number:* ${formData.phoneNumber}
 • *Property Type:* ${formData.propertyType}
-• *City:* ${formData.city}
-• *Budget:* ${formData.budget || 'Not specified'}
+• *Area:* ${formData.area}
+• *Monthly Bill:* ${formData.monthlyBill || 'Not specified'}
 
 ―――――――――――――
-_Sent via Nesture Interiors Website_
+_Sent via Solar Installation Vadodara Website_
     `.trim()
 
-    const whatsappNumber = "918618080171"
+    const whatsappNumber = "919876543210"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, "_blank")
   }
@@ -100,39 +113,53 @@ _Sent via Nesture Interiors Website_
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/50 to-primary/30 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/30 via-slate-800/20 to-slate-900/30 z-0" />
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-900/90 via-orange-800/60 to-orange-700/40 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/40 via-slate-800/30 to-slate-900/40 z-0" />
           <div className="absolute inset-0 z-20 flex items-center px-3 sm:px-4 md:px-0">
             <div className="container mx-auto px-3 sm:px-4 py-4 md:py-0">
               <div className="grid md:grid-cols-5 gap-3 md:gap-6 items-start">
                 {/* Left Side - Text Content */}
                 <div className="md:col-span-3 max-w-2xl space-y-2 md:space-y-6">
-                  <div className="flex items-center gap-2 text-accent">
-                    <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
+                  <div className="flex items-center gap-2 text-yellow-400">
+                    <Sun className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                     <span className="text-xs font-mono uppercase tracking-wider">{slide.subtitle}</span>
                   </div>
-                  <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-primary-foreground leading-tight text-balance">
+                  <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-white leading-tight text-balance">
                     {slide.title}
                   </h2>
-                  <p className="text-sm sm:text-base md:text-lg text-primary-foreground/90 font-mono leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-white/90 font-mono leading-relaxed">
                     {slide.description}
                   </p>
+                  <div className="flex flex-wrap gap-3 pt-2">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                      <p className="text-yellow-400 text-xs font-mono">Starting</p>
+                      <p className="text-white font-bold">₹55,000/kW</p>
+                    </div>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                      <p className="text-yellow-400 text-xs font-mono">Subsidy</p>
+                      <p className="text-white font-bold">Up to ₹78,000</p>
+                    </div>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
+                      <p className="text-yellow-400 text-xs font-mono">Warranty</p>
+                      <p className="text-white font-bold">25 Years</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Right Side - Form */}
-                <div className="md:col-span-2 bg-card rounded-lg p-3 md:p-5 shadow-2xl h-fit">
-                  <div className="mb-2 md:mb-3 pb-2 md:pb-3 border-b border-border">
-                    <p className="text-xs text-accent font-mono uppercase tracking-wider mb-1">Quick Response</p>
-                    <h3 className="text-xs sm:text-sm md:text-base font-bold text-card-foreground">
-                      Professional Interior Design Services
+                <div className="md:col-span-2 bg-white rounded-lg p-3 md:p-5 shadow-2xl h-fit">
+                  <div className="mb-2 md:mb-3 pb-2 md:pb-3 border-b border-gray-200">
+                    <p className="text-xs text-orange-600 font-mono uppercase tracking-wider mb-1">Free Consultation</p>
+                    <h3 className="text-xs sm:text-sm md:text-base font-bold text-gray-800">
+                      Get Solar Quote in 30 Minutes
                       <br />
-                      <em className="text-xs not-italic">— Free Consultation & 3D Visualization</em>
+                      <em className="text-xs not-italic text-gray-600">— Site Visit & Estimate Included</em>
                     </h3>
                   </div>
                   <form onSubmit={handleSubmit} className="space-y-2">
                     <div>
-                      <label htmlFor="fullName" className="block text-xs font-mono text-card-foreground mb-1">
-                        1. Full Name <span className="text-destructive">*</span>
+                      <label htmlFor="fullName" className="block text-xs font-mono text-gray-700 mb-1">
+                        1. Full Name <span className="text-red-500">*</span>
                       </label>
                       <Input
                         id="fullName"
@@ -141,13 +168,13 @@ _Sent via Nesture Interiors Website_
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         required
-                        className="bg-background border-border text-foreground text-xs h-8"
+                        className="bg-gray-50 border-gray-300 text-gray-800 text-xs h-8"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="phoneNumber" className="block text-xs font-mono text-card-foreground mb-1">
-                        2. Phone Number <span className="text-destructive">*</span>
+                      <label htmlFor="phoneNumber" className="block text-xs font-mono text-gray-700 mb-1">
+                        2. Phone Number <span className="text-red-500">*</span>
                       </label>
                       <Input
                         id="phoneNumber"
@@ -156,64 +183,70 @@ _Sent via Nesture Interiors Website_
                         value={formData.phoneNumber}
                         onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                         required
-                        className="bg-background border-border text-foreground text-xs h-8"
+                        className="bg-gray-50 border-gray-300 text-gray-800 text-xs h-8"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="propertyType" className="block text-xs font-mono text-card-foreground mb-1">
-                        3. Property Type <span className="text-destructive">*</span>
+                      <label htmlFor="propertyType" className="block text-xs font-mono text-gray-700 mb-1">
+                        3. Property Type <span className="text-red-500">*</span>
                       </label>
                       <select
                         id="propertyType"
                         value={formData.propertyType}
                         onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
                         required
-                        className="w-full bg-background border border-border text-foreground rounded-md px-2 py-1 text-xs h-8"
+                        className="w-full bg-gray-50 border border-gray-300 text-gray-800 rounded-md px-2 py-1 text-xs h-8"
                       >
                         <option value="">Select Property Type</option>
-                        <option value="1BHK">1BHK</option>
-                        <option value="2BHK">2BHK</option>
-                        <option value="3BHK">3BHK</option>
-                        <option value="Villa">Villa</option>
-                        <option value="Bungalow">Bungalow</option>
-                        <option value="Commercial">Commercial</option>
-                        <option value="Office">Office</option>
+                        <option value="Residential">Residential Home</option>
+                        <option value="Villa/Bungalow">Villa / Bungalow</option>
+                        <option value="Society">Housing Society</option>
+                        <option value="Commercial">Commercial Building</option>
+                        <option value="Industrial">Industrial / Factory</option>
+                        <option value="Warehouse">Warehouse</option>
+                        <option value="Agricultural">Agricultural Land</option>
                       </select>
                     </div>
 
                     <div>
-                      <label htmlFor="city" className="block text-xs font-mono text-card-foreground mb-1">
-                        4. City <span className="text-destructive">*</span>
+                      <label htmlFor="area" className="block text-xs font-mono text-gray-700 mb-1">
+                        4. Area in Vadodara <span className="text-red-500">*</span>
                       </label>
                       <Input
-                        id="city"
+                        id="area"
                         type="text"
-                        placeholder="Enter your city"
-                        value={formData.city}
-                        onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                        placeholder="e.g., Alkapuri, Gotri, GIDC"
+                        value={formData.area}
+                        onChange={(e) => setFormData({ ...formData, area: e.target.value })}
                         required
-                        className="bg-background border-border text-foreground text-xs h-8"
+                        className="bg-gray-50 border-gray-300 text-gray-800 text-xs h-8"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="budget" className="block text-xs font-mono text-card-foreground mb-1">
-                        5. Budget (Optional)
+                      <label htmlFor="monthlyBill" className="block text-xs font-mono text-gray-700 mb-1">
+                        5. Monthly Electricity Bill (Optional)
                       </label>
-                      <Input
-                        id="budget"
-                        type="text"
-                        placeholder="e.g., 5 Lakhs, 10-20 Lakhs"
-                        value={formData.budget}
-                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className="bg-background border-border text-foreground text-xs h-8"
-                      />
+                      <select
+                        id="monthlyBill"
+                        value={formData.monthlyBill}
+                        onChange={(e) => setFormData({ ...formData, monthlyBill: e.target.value })}
+                        className="w-full bg-gray-50 border border-gray-300 text-gray-800 rounded-md px-2 py-1 text-xs h-8"
+                      >
+                        <option value="">Select Range</option>
+                        <option value="₹1,000 - ₹3,000">₹1,000 - ₹3,000</option>
+                        <option value="₹3,000 - ₹5,000">₹3,000 - ₹5,000</option>
+                        <option value="₹5,000 - ₹10,000">₹5,000 - ₹10,000</option>
+                        <option value="₹10,000 - ₹25,000">₹10,000 - ₹25,000</option>
+                        <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000</option>
+                        <option value="₹50,000+">₹50,000+</option>
+                      </select>
                     </div>
 
-                    <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white text-xs h-8">
+                    <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white text-xs h-9 mt-2">
                       <MessageCircle className="w-3 h-3 mr-1" />
-                      Send via WhatsApp
+                      Get Free Quote on WhatsApp
                     </Button>
                   </form>
                 </div>
@@ -223,6 +256,20 @@ _Sent via Nesture Interiors Website_
         </div>
       ))}
 
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full p-2 transition-all"
+      >
+        <ChevronLeft className="w-6 h-6 text-white" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full p-2 transition-all"
+      >
+        <ChevronRight className="w-6 h-6 text-white" />
+      </button>
+
       {/* Dots Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2">
         {slides.map((_, index) => (
@@ -230,7 +277,7 @@ _Sent via Nesture Interiors Website_
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`h-2 rounded-full transition-all ${
-              index === currentSlide ? "w-8 bg-accent" : "w-2 bg-primary-foreground/50 hover:bg-primary-foreground/75"
+              index === currentSlide ? "w-8 bg-yellow-400" : "w-2 bg-white/50 hover:bg-white/75"
             }`}
           />
         ))}

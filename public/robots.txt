@@ -1,6 +1,6 @@
-# Robots.txt for SolarVadodara.in
+# Robots.txt for SolarInstallationVadodara.in
 # Solar Panel Installation Services - Vadodara, Gujarat
-# Last Updated: January 2026
+# Last Updated: February 2026
 
 # Default rules for all crawlers
 User-agent: *
@@ -8,7 +8,7 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap locations
-Sitemap: https://solarvadodara.in/sitemap.xml
+Sitemap: https://solarinstallationvadodara.in/sitemap.xml
 
 # Block internal/system paths
 Disallow: /api/
@@ -87,4 +87,4 @@ User-agent: DotBot
 Disallow: /
 
 # Host directive
-Host: https://solarvadodara.in
+Host: https://solarinstallationvadodara.in

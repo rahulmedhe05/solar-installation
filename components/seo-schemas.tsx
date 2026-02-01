@@ -7,13 +7,13 @@ export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://solarvadodara.in/#organization",
-    name: "SolarVadodara.in - Solar Installation Company",
-    alternateName: "Solar Vadodara",
+    "@id": "https://solarinstallationvadodara.in/#organization",
+    name: "SolarInstallationVadodara.in - Solar Installation Company",
+    alternateName: "Solar Installation Vadodara",
     description: "Leading solar panel installation company in Vadodara, Gujarat. MNRE & GEDA approved installer offering residential, commercial & industrial solar solutions with government subsidy assistance.",
-    url: "https://solarvadodara.in",
+    url: "https://solarinstallationvadodara.in",
     telephone: "+91-6353583148",
-    email: "info@solarvadodara.in",
+    email: "info@solarinstallationvadodara.in",
     address: {
       "@type": "PostalAddress",
       streetAddress: "123, Solar Energy Hub, Alkapuri",
@@ -37,12 +37,12 @@ export function LocalBusinessSchema() {
     ],
     priceRange: "₹45,000 - ₹10,00,000",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=630&fit=crop",
-    logo: "https://solarvadodara.in/logo.png",
+    logo: "https://solarinstallationvadodara.in/logo.png",
     sameAs: [
-      "https://facebook.com/solarvadodara",
-      "https://instagram.com/solarvadodara",
-      "https://twitter.com/solarvadodara",
-      "https://linkedin.com/company/solarvadodara"
+      "https://facebook.com/solarinstallationvadodara",
+      "https://instagram.com/solarinstallationvadodara",
+      "https://twitter.com/solarinstallationvadodara",
+      "https://linkedin.com/company/solarinstallationvadodara"
     ],
     areaServed: {
       "@type": "City",
@@ -173,7 +173,7 @@ export function ProductSchema({ name, description, price, image }: ProductSchema
     image: image || "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop",
     brand: {
       "@type": "Brand",
-      name: "SolarVadodara"
+      name: "SolarInstallationVadodara"
     },
     offers: {
       "@type": "Offer",
@@ -182,7 +182,7 @@ export function ProductSchema({ name, description, price, image }: ProductSchema
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
-        name: "SolarVadodara.in"
+        name: "SolarInstallationVadodara.in"
       }
     },
     aggregateRating: {
@@ -216,8 +216,8 @@ export function ServiceSchema({ name, description, areaServed = "Vadodara" }: Se
     description: description,
     provider: {
       "@type": "LocalBusiness",
-      name: "SolarVadodara.in",
-      "@id": "https://solarvadodara.in/#organization"
+      name: "SolarInstallationVadodara.in",
+      "@id": "https://solarinstallationvadodara.in/#organization"
     },
     areaServed: {
       "@type": "City",
@@ -242,8 +242,8 @@ export function ReviewSchema() {
     "@type": "Review",
     itemReviewed: {
       "@type": "LocalBusiness",
-      name: "SolarVadodara.in",
-      "@id": "https://solarvadodara.in/#organization"
+      name: "SolarInstallationVadodara.in",
+      "@id": "https://solarinstallationvadodara.in/#organization"
     },
     reviewRating: {
       "@type": "Rating",
@@ -271,11 +271,11 @@ export function WebsiteSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "SolarVadodara.in",
-    url: "https://solarvadodara.in",
+    name: "SolarInstallationVadodara.in",
+    url: "https://solarinstallationvadodara.in",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://solarvadodara.in/search?q={search_term_string}",
+      target: "https://solarinstallationvadodara.in/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -320,14 +320,14 @@ export function ArticleSchema({
     author: {
       "@type": "Person",
       name: author,
-      url: "https://solarvadodara.in"
+      url: "https://solarinstallationvadodara.in"
     },
     publisher: {
       "@type": "Organization",
-      name: "SolarVadodara.in",
+      name: "SolarInstallationVadodara.in",
       logo: {
         "@type": "ImageObject",
-        url: "https://solarvadodara.in/logo.png"
+        url: "https://solarinstallationvadodara.in/logo.png"
       }
     },
     mainEntityOfPage: {

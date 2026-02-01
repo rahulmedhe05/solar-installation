@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'SolarVadodara.in - Best Solar Installation Company',
+    name: 'SolarInstallationVadodara.in - Best Solar Installation Company',
     short_name: 'SolarVadodara',
     description: 'Gujarat\'s most trusted solar panel installation company in Vadodara. MNRE & GEDA approved. Get up to ₹78,000 government subsidy.',
     start_url: '/',

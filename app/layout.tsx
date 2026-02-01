@@ -19,31 +19,31 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "#1 Solar Installation Vadodara | ₹78,000 Subsidy | SolarVadodara.in",
-    template: "%s | SolarVadodara.in"
+    default: "#1 Solar Installation Vadodara | ₹78,000 Subsidy | SolarInstallationVadodara.in",
+    template: "%s | SolarInstallationVadodara.in"
   },
   description:
     "🌞 Vadodara's most trusted solar company! 5000+ installations, MNRE approved, ₹78,000 PM Surya Ghar subsidy. Get ZERO electricity bills with 25-year warranty. Free site survey! Call +91-6353583148",
   keywords:
     "solar installation vadodara, solar panel vadodara, best solar company vadodara, rooftop solar vadodara, solar subsidy vadodara, pm surya ghar vadodara, 3kw solar system price, 5kw solar vadodara, on grid solar, net metering UGVCL",
-  authors: [{ name: "SolarVadodara.in" }],
-  creator: "SolarVadodara.in",
-  publisher: "SolarVadodara.in",
+  authors: [{ name: "SolarInstallationVadodara.in" }],
+  creator: "SolarInstallationVadodara.in",
+  publisher: "SolarInstallationVadodara.in",
   formatDetection: {
     email: true,
     address: true,
     telephone: true,
   },
-  metadataBase: new URL("https://solarvadodara.in"),
+  metadataBase: new URL("https://solarinstallationvadodara.in"),
   alternates: {
-    canonical: "https://solarvadodara.in",
+    canonical: "https://solarinstallationvadodara.in",
   },
   openGraph: {
     title: "🌞 Vadodara's #1 Solar Company | ₹78,000 Subsidy | 5000+ Installations",
     description:
       "Transform your rooftop into a powerhouse! MNRE approved, 25-year warranty, ZERO electricity bills. Join 5000+ happy Vadodara families. Free site survey!",
-    url: "https://solarvadodara.in",
-    siteName: "SolarVadodara.in",
+    url: "https://solarinstallationvadodara.in",
+    siteName: "SolarInstallationVadodara.in",
     locale: "en_IN",
     type: "website",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=630&fit=crop",
         width: 1200,
         height: 630,
-        alt: "Best Solar Panel Installation in Vadodara - SolarVadodara.in",
+        alt: "Best Solar Panel Installation in Vadodara - SolarInstallationVadodara.in",
       },
     ],
   },

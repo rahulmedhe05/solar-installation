@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { vadodaraAreas } from '@/lib/business-config';
 import { solarKeywords } from '@/lib/keywords-config';
 
-const baseUrl = 'https://solarvadodara.in';
+const baseUrl = 'https://solarinstallationvadodara.in';
 
 // Blog posts slugs
 const blogSlugs = [

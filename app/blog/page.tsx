@@ -7,11 +7,11 @@ import { BusinessWhatsAppFloat } from "@/components/business-whatsapp-float";
 import { Calendar, Clock, User, ArrowRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Solar Energy Blog | Tips, Guides & News | SolarVadodara.in",
+  title: "Solar Energy Blog | Tips, Guides & News | SolarInstallationVadodara.in",
   description: "Expert solar energy tips, installation guides, government subsidy updates, and industry news for Vadodara. Learn about solar panels, savings, and green energy.",
   keywords: "solar blog, solar tips vadodara, solar guide, solar installation guide, solar subsidy news, pm surya ghar updates",
   openGraph: {
-    title: "Solar Energy Blog | SolarVadodara.in",
+    title: "Solar Energy Blog | SolarInstallationVadodara.in",
     description: "Expert solar tips, guides & news for Vadodara homeowners",
     type: "website",
     locale: "en_IN",

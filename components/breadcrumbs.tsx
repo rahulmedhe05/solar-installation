@@ -17,10 +17,10 @@ interface BreadcrumbsProps {
 export function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
   // Build full breadcrumb path with home
   const fullItems = [
-    { label: "Home", href: "https://solarvadodara.in" },
+    { label: "Home", href: "https://solarinstallationvadodara.in" },
     ...items.map(item => ({
       ...item,
-      href: item.href.startsWith("http") ? item.href : `https://solarvadodara.in${item.href}`
+      href: item.href.startsWith("http") ? item.href : `https://solarinstallationvadodara.in${item.href}`
     }))
   ];
 

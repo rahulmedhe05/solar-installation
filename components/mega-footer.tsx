@@ -15,7 +15,7 @@ export function MegaFooter() {
             <div className="flex items-center gap-3">
               <Sun className="w-12 h-12 text-white" />
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold text-white">SolarVadodara.in</h1>
+                <h1 className="text-3xl md:text-4xl font-bold text-white">SolarInstallationVadodara.in</h1>
                 <p className="text-white/90 text-sm">Gujarat&apos;s Most Trusted Solar Installation Company</p>
               </div>
             </div>
@@ -183,7 +183,7 @@ export function MegaFooter() {
             </a>
           </div>
           <p className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} SolarVadodara.in - Solar Installation Vadodara. All Rights Reserved. | MNRE & GEDA Approved Installer
+            © {new Date().getFullYear()} SolarInstallationVadodara.in - Solar Installation Vadodara. All Rights Reserved. | MNRE & GEDA Approved Installer
           </p>
         </div>
       </div>

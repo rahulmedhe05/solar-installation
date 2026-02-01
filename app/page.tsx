@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=630&fit=crop",
         width: 1200,
         height: 630,
-        alt: "Best Solar Installation Company in Vadodara - SolarVadodara.in",
+        alt: "Best Solar Installation Company in Vadodara - SolarInstallationVadodara.in",
       },
     ],
   },

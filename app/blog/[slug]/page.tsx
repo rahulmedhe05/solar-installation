@@ -92,7 +92,7 @@ Fill the online application with:
 UGVCL will verify your rooftop feasibility within 15-20 days.
 
 ### Step 4: Choose Empanelled Vendor
-Select an MNRE-approved solar installer like SolarVadodara.in from the portal.
+Select an MNRE-approved solar installer like SolarInstallationVadodara.in from the portal.
 
 ### Step 5: Installation
 Complete installation within 60 days of approval.
@@ -112,7 +112,7 @@ Subsidy amount credited directly to your bank account within 30 days.
 | ₹3,500-5,000 | 4-5 kW | ₹78,000 | ₹1,50,000-2,20,000 |
 | ₹5,000+ | 5-10 kW | ₹78,000 | ₹2,50,000+ |
 
-## Why Choose SolarVadodara.in?
+## Why Choose SolarInstallationVadodara.in?
 
 - ✅ **MNRE & GEDA Approved** installer
 - ✅ **Complete subsidy assistance** - we handle all paperwork
@@ -133,10 +133,10 @@ A: High-efficiency bifacial panels can generate more power in limited space. We 
 
 ## Get Started Today!
 
-Ready to harness solar power and save on electricity? Contact SolarVadodara.in for a **free consultation** and let us handle your PM Surya Ghar application.
+Ready to harness solar power and save on electricity? Contact SolarInstallationVadodara.in for a **free consultation** and let us handle your PM Surya Ghar application.
 
 📞 Call: +91-6353583148
-📧 Email: info@solarvadodara.in
+📧 Email: info@solarinstallationvadodara.in
     `,
     relatedPosts: ["how-much-solar-panel-cost-vadodara-2026", "how-net-metering-works-ugvcl-vadodara"],
   },
@@ -166,7 +166,7 @@ If you're considering solar installation in Vadodara, understanding the costs in
 
 ### What's Included in the Price?
 
-A complete solar installation package from SolarVadodara.in includes:
+A complete solar installation package from SolarInstallationVadodara.in includes:
 
 1. **Solar Panels** - Tier-1 mono PERC panels (Waaree/Tata/Adani)
 2. **Solar Inverter** - Grid-tied inverter with monitoring
@@ -572,7 +572,7 @@ Best season for solar in Vadodara:
 
 ---
 
-## AMC Services from SolarVadodara.in
+## AMC Services from SolarInstallationVadodara.in
 
 **Annual Maintenance Contract:**
 - 4 professional cleanings per year
@@ -686,7 +686,7 @@ After feasibility approval:
 - Roof photographs
 
 **We Handle Everything:**
-SolarVadodara.in manages the complete net metering process for you!
+SolarInstallationVadodara.in manages the complete net metering process for you!
 
 ---
 
@@ -1021,7 +1021,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: `${post.title} | SolarVadodara.in Blog`,
+    title: `${post.title} | SolarInstallationVadodara.in Blog`,
     description: post.metaDescription,
     openGraph: {
       title: post.title,
@@ -1058,7 +1058,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         image={post.image}
         datePublished={post.date}
         author={post.author}
-        url={`https://solarvadodara.in/blog/${slug}`}
+        url={`https://solarinstallationvadodara.in/blog/${slug}`}
       />
       
       {/* Hero Image */}
@@ -1108,7 +1108,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="flex items-center gap-4 mb-8 pb-8 border-b">
               <span className="text-gray-500 text-sm">Share:</span>
               <a 
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://solarvadodara.in/blog/${slug}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=https://solarinstallationvadodara.in/blog/${slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-blue-600 text-white rounded-full hover:bg-blue-700"
@@ -1116,7 +1116,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Facebook className="w-4 h-4" />
               </a>
               <a 
-                href={`https://twitter.com/intent/tweet?url=https://solarvadodara.in/blog/${slug}&text=${encodeURIComponent(post.title)}`}
+                href={`https://twitter.com/intent/tweet?url=https://solarinstallationvadodara.in/blog/${slug}&text=${encodeURIComponent(post.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-sky-500 text-white rounded-full hover:bg-sky-600"
@@ -1124,7 +1124,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Twitter className="w-4 h-4" />
               </a>
               <a 
-                href={`https://www.linkedin.com/shareArticle?mini=true&url=https://solarvadodara.in/blog/${slug}&title=${encodeURIComponent(post.title)}`}
+                href={`https://www.linkedin.com/shareArticle?mini=true&url=https://solarinstallationvadodara.in/blog/${slug}&title=${encodeURIComponent(post.title)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-blue-700 text-white rounded-full hover:bg-blue-800"
@@ -1146,7 +1146,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 alt="Solar installation on home in Vadodara"
                 className="w-full h-64 object-cover rounded-xl"
               />
-              <p className="text-sm text-gray-500 text-center mt-2">Professional solar installation by SolarVadodara.in</p>
+              <p className="text-sm text-gray-500 text-center mt-2">Professional solar installation by SolarInstallationVadodara.in</p>
             </div>
 
             {/* CTA Box */}

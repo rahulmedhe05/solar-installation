@@ -131,3 +131,90 @@ export function WebsiteSchema() {
     />
   );
 }
+
+export function FAQSchema({ faqs }: { faqs: { question: string; answer: string }[] }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
+  return (
+    <Script
+      id="faq-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      strategy="afterInteractive"
+    />
+  );
+}
+
+export function ProductSchema({
+  name,
+  description,
+  price,
+}: {
+  name: string;
+  description: string;
+  price: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name,
+    description,
+    brand: {
+      "@type": "Brand",
+      name: SEO_CONFIG.siteName,
+    },
+    offers: {
+      "@type": "Offer",
+      price,
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: SEO_CONFIG.siteName,
+      },
+    },
+  };
+
+  return (
+    <Script
+      id="product-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      strategy="afterInteractive"
+    />
+  );
+}
+
+export function ReviewSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: SEO_CONFIG.siteName,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "5000",
+      bestRating: "5",
+    },
+  };
+
+  return (
+    <Script
+      id="review-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      strategy="afterInteractive"
+    />
+  );
+}

@@ -196,6 +196,53 @@ export function ProductSchema({
   );
 }
 
+export function ArticleSchema({
+  title,
+  description,
+  image,
+  datePublished,
+  author,
+  url,
+}: {
+  title: string;
+  description: string;
+  image: string;
+  datePublished: string;
+  author: string;
+  url: string;
+}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    image,
+    datePublished,
+    author: {
+      "@type": "Person",
+      name: author,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SEO_CONFIG.siteName,
+      url: SEO_CONFIG.siteUrl,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+
+  return (
+    <Script
+      id="article-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      strategy="afterInteractive"
+    />
+  );
+}
+
 export function ReviewSchema() {
   const schema = {
     "@context": "https://schema.org",

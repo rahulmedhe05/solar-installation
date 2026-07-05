@@ -19,8 +19,12 @@ const solarFormConfig = {
   fields: [
     { name: "fullName", label: "Full Name", type: "text", required: true },
     { name: "mobile", label: "Mobile Number", type: "tel", required: true },
+    { name: "monthlyBill", label: "Monthly Electricity Bill", type: "select", options: ["Under ₹2,000", "₹2,000 - ₹5,000", "₹5,000 - ₹10,000", "Above ₹10,000"], required: false },
+    { name: "roofType", label: "Roof / Ownership", type: "select", options: ["Own House", "Rented", "Society / Flat", "Open Land"], required: false },
     { name: "requirement", label: "Requirement", type: "select", options: ["Residential", "Commercial", "Industrial"], required: false },
     { name: "systemSize", label: "System Size", type: "select", options: ["1-3 KW", "3-5 KW", "5-10 KW", "10+ KW"], required: false },
+    { name: "timeline", label: "When do you want to install?", type: "select", options: ["Immediately", "Within 1 Month", "Just Exploring"], required: false },
+    { name: "contactTime", label: "Best Time to Contact You", type: "select", options: ["Morning", "Afternoon", "Evening"], required: false },
     { name: "message", label: "Anything specific we should know?", type: "textarea", required: false },
   ],
 };

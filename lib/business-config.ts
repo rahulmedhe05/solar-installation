@@ -69,10 +69,10 @@ export const businesses: BusinessConfig[] = [
     tagline: "Harness the Power of Sun with Solar Energy",
     description: "Professional solar installation services in Vadodara",
     colors: {
-      primary: "#F59E0B", // Solar Orange
-      secondary: "#FCD34D", // Yellow
-      accent: "#92400E", // Dark Orange
-      gradient: "from-orange-500 to-yellow-500",
+      primary: "#1E3A8A", // Tarun & Co. Navy Blue
+      secondary: "#F59E0B", // Solar Orange/Gold
+      accent: "#1E3A8A", // Navy Blue
+      gradient: "from-blue-900 to-orange-500",
     },
     icon: "☀️",
     services: [

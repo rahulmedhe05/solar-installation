@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | SolarInstallationVadodara.in"
   },
   description:
-    "🌞 Vadodara's most trusted solar company! 5000+ installations, MNRE approved, ₹78,000 PM Surya Ghar subsidy. Get ZERO electricity bills with 25-year warranty. Free site survey! Call +91-6353583148",
+    "🌞 Vadodara's most trusted solar company! 5000+ installations, MNRE approved, ₹78,000 PM Surya Ghar subsidy. Get ZERO electricity bills with 25-year warranty. Free site survey! Call +91-9033451995",
   keywords:
     "solar installation vadodara, solar panel vadodara, best solar company vadodara, rooftop solar vadodara, solar subsidy vadodara, pm surya ghar vadodara, 3kw solar system price, 5kw solar vadodara, on grid solar, net metering UGVCL",
   authors: [{ name: "SolarInstallationVadodara.in" }],

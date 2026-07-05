@@ -465,14 +465,14 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+916353583148"
+              href="tel:+919033451995"
               className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all"
             >
               <Phone className="w-5 h-5" />
               Call Now
             </a>
             <a
-              href={`https://wa.me/916353583148?text=Hi, I need ${business.name} services in ${areaName}`}
+              href={`https://wa.me/919033451995?text=Hi, I need ${business.name} services in ${areaName}`}
               className="inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition-all"
             >
               Get Free Quote
@@ -539,20 +539,20 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <a
-                href="tel:+916353583148"
+                href="tel:+919033451995"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Phone className="w-8 h-8 mb-3" />
                 <p className="font-bold">Call Us</p>
-                <p className="opacity-90">+91 98765 43210</p>
+                <p className="opacity-90">+91 90334 51995</p>
               </a>
               <a
-                href="mailto:info@yourbusiness.com"
+                href="mailto:taruncopwr@gmail.com"
                 className="flex flex-col items-center p-6 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <Mail className="w-8 h-8 mb-3" />
                 <p className="font-bold">Email Us</p>
-                <p className="opacity-90">info@yourbusiness.com</p>
+                <p className="opacity-90">taruncopwr@gmail.com</p>
               </a>
               <div className="flex flex-col items-center p-6 bg-white/10 rounded-xl">
                 <MapPin className="w-8 h-8 mb-3" />
@@ -561,7 +561,7 @@ export function BusinessPageTemplate({ business, area, content }: BusinessPageTe
               </div>
             </div>
             <a
-              href={`https://wa.me/916353583148?text=Hi, I'm interested in ${business.name} services in ${locationText}`}
+              href={`https://wa.me/919033451995?text=Hi, I'm interested in ${business.name} services in ${locationText}`}
               className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-colors"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

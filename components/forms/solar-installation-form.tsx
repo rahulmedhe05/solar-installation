@@ -35,7 +35,7 @@ export function SolarInstallationForm({ area, keyword }: SolarInstallationFormPr
     if (keyword) message += `🔍 *Interest:* ${keyword}\n`;
     message += `\n_From: solarinstallationvadodara.in_`;
 
-    const whatsappURL = `https://wa.me/916353583148?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/919033451995?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
     setIsSubmitting(false);
   };
@@ -160,8 +160,8 @@ export function SolarInstallationForm({ area, keyword }: SolarInstallationFormPr
                   <div>
                     <h3 className="text-xl font-bold mb-1">Call Us Now</h3>
                     <p className="text-white/80 text-sm mb-2">Mon-Sat: 9 AM - 7 PM</p>
-                    <a href="tel:+916353583148" className="text-lg font-semibold hover:underline">
-                      +91 98765 43210
+                    <a href="tel:+919033451995" className="text-lg font-semibold hover:underline">
+                      +91 90334 51995
                     </a>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ export function SolarInstallationForm({ area, keyword }: SolarInstallationFormPr
                     <h3 className="text-xl font-bold mb-1">WhatsApp Us</h3>
                     <p className="text-white/80 text-sm mb-2">Quick Response Guaranteed</p>
                     <a
-                      href="https://wa.me/916353583148?text=Hi, I need solar installation quote"
+                      href="https://wa.me/919033451995?text=Hi, I need solar installation quote"
                       target="_blank"
                       className="text-lg font-semibold hover:underline"
                     >

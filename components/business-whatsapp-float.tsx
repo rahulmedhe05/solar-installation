@@ -12,17 +12,17 @@ interface BusinessWhatsAppFloatProps {
 }
 
 // Business-specific configurations
-const businessMeta: Record<string, { emoji: string; phone: string; domain: string }> = {
-  "interior-designers": { emoji: "🏠", phone: "916353583148", domain: "interiordesignvadodara.in" },
-  "real-estate": { emoji: "🏢", phone: "916353583148", domain: "vadodarahomes.in" },
-  "solar-installation": { emoji: "☀️", phone: "916353583148", domain: "vadodarasolar.in" },
-  "skin-hair": { emoji: "💆", phone: "916353583148", domain: "skinclinicvadodara.in" },
-  "lawyer": { emoji: "⚖️", phone: "916353583148", domain: "vadodaralawyer.in" },
-  "dentists": { emoji: "🦷", phone: "916353583148", domain: "dentistvadodara.in" },
-  "home-automation": { emoji: "🏠", phone: "916353583148", domain: "smarthomevadodara.in" },
-  "security-cctv": { emoji: "📹", phone: "916353583148", domain: "cctvvadodara.in" },
-  "wedding-planners": { emoji: "💒", phone: "916353583148", domain: "weddingvadodara.in" },
-  "study-abroad": { emoji: "🎓", phone: "916353583148", domain: "studyabroadvadodara.in" },
+const businessMeta: Record<string, { phone: string; domain: string }> = {
+  "interior-designers": { phone: "919033451995", domain: "interiordesignvadodara.in" },
+  "real-estate": { phone: "919033451995", domain: "vadodarahomes.in" },
+  "solar-installation": { phone: "919033451995", domain: "solarinstallationvadodara.in" },
+  "skin-hair": { phone: "919033451995", domain: "skinclinicvadodara.in" },
+  "lawyer": { phone: "919033451995", domain: "vadodaralawyer.in" },
+  "dentists": { phone: "919033451995", domain: "dentistvadodara.in" },
+  "home-automation": { phone: "919033451995", domain: "smarthomevadodara.in" },
+  "security-cctv": { phone: "919033451995", domain: "cctvvadodara.in" },
+  "wedding-planners": { phone: "919033451995", domain: "weddingvadodara.in" },
+  "study-abroad": { phone: "919033451995", domain: "studyabroadvadodara.in" },
 };
 
 // Form field configurations for each business type
@@ -138,17 +138,17 @@ export function BusinessWhatsAppFloat({ business, area, keyword }: BusinessWhats
     e.preventDefault();
     setIsSubmitting(true);
 
-    let message = `${meta.emoji} *${business.name.toUpperCase()} ENQUIRY*\n\n`;
-    
+    let message = `*New ${business.name} Enquiry*\n\n`;
+
     config.fields.forEach((field) => {
       if (formData[field.name]) {
-        message += `• *${field.label}:* ${formData[field.name]}\n`;
+        message += `*${field.label}:* ${formData[field.name]}\n`;
       }
     });
-    
-    message += `📍 *Area:* ${locationText}\n`;
-    if (keyword) message += `🔍 *Interest:* ${keyword}\n`;
-    message += `\n_From: ${meta.domain}_`;
+
+    message += `*Area:* ${locationText}\n`;
+    if (keyword) message += `*Interest:* ${keyword}\n`;
+    message += `\n_Enquiry via ${meta.domain}_`;
 
     const whatsappURL = `https://wa.me/${meta.phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");

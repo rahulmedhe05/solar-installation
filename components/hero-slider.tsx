@@ -79,7 +79,7 @@ export function HeroSlider() {
 _Sent via Solar Installation Vadodara Website_
     `.trim()
 
-    const whatsappNumber = "919876543210"
+    const whatsappNumber = "919033451995"
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, "_blank")
   }

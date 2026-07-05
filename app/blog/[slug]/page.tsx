@@ -135,7 +135,7 @@ A: High-efficiency bifacial panels can generate more power in limited space. We 
 
 Ready to harness solar power and save on electricity? Contact SolarInstallationVadodara.in for a **free consultation** and let us handle your PM Surya Ghar application.
 
-📞 Call: +91-6353583148
+📞 Call: +91-9033451995
 📧 Email: info@solarinstallationvadodara.in
     `,
     relatedPosts: ["how-much-solar-panel-cost-vadodara-2026", "how-net-metering-works-ugvcl-vadodara"],
@@ -206,7 +206,7 @@ With Vadodara receiving excellent sunshine (5.5-6 peak hours daily):
 
 Every roof is unique. Contact us for a detailed site survey and customized quote:
 
-📞 +91-6353583148
+📞 +91-9033451995
     `,
     relatedPosts: ["pm-surya-ghar-yojana-complete-guide-2026", "calculate-solar-system-size-home"],
   },
@@ -325,7 +325,7 @@ For most Vadodara residents, we recommend:
 2. **Hybrid** - If you experience 2+ hours of daily power cuts
 3. **Off-Grid** - Only for farmhouses or areas without grid
 
-📞 Call +91-6353583148 for a free consultation!
+📞 Call +91-9033451995 for a free consultation!
     `,
     relatedPosts: ["how-much-solar-panel-cost-vadodara-2026", "solar-battery-lithium-vs-lead-acid"],
   },
@@ -452,7 +452,7 @@ Known for their inverters, Luminous solar panels offer good quality at competiti
 **Best Value for Money:**
 Waaree or Vikram Solar
 
-📞 Contact us at +91-6353583148 for brand-specific quotes!
+📞 Contact us at +91-9033451995 for brand-specific quotes!
     `,
     relatedPosts: ["how-much-solar-panel-cost-vadodara-2026", "calculate-solar-system-size-home"],
   },
@@ -583,7 +583,7 @@ Best season for solar in Vadodara:
 
 **Cost:** ₹2,000-5,000/year (based on system size)
 
-📞 Call +91-6353583148 for AMC enrollment!
+📞 Call +91-9033451995 for AMC enrollment!
     `,
     relatedPosts: ["best-solar-panel-brands-india-2026", "how-net-metering-works-ugvcl-vadodara"],
   },
@@ -717,7 +717,7 @@ A: Yes, apply for capacity enhancement through UGVCL.
 **Q: Is net metering available for 3-phase connections?**
 A: Yes, available for both single and three-phase connections.
 
-📞 Need help with net metering? Call +91-6353583148
+📞 Need help with net metering? Call +91-9033451995
     `,
     relatedPosts: ["pm-surya-ghar-yojana-complete-guide-2026", "on-grid-vs-off-grid-vs-hybrid-solar-system"],
   },
@@ -850,7 +850,7 @@ Not sure about your requirements? We offer **FREE site surveys** in Vadodara:
 - Custom system design
 - Exact cost estimate
 
-📞 Book your free survey: +91-6353583148
+📞 Book your free survey: +91-9033451995
     `,
     relatedPosts: ["how-much-solar-panel-cost-vadodara-2026", "on-grid-vs-off-grid-vs-hybrid-solar-system"],
   },
@@ -1002,7 +1002,7 @@ If you're considering a hybrid or off-grid solar system, battery selection is cr
 
 For Vadodara's hot climate and long-term value, **we strongly recommend Lithium-Ion (LiFePO4) batteries** for hybrid solar systems.
 
-📞 Get battery consultation: +91-6353583148
+📞 Get battery consultation: +91-9033451995
     `,
     relatedPosts: ["on-grid-vs-off-grid-vs-hybrid-solar-system", "how-much-solar-panel-cost-vadodara-2026"],
   },
@@ -1154,10 +1154,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <h3 className="text-2xl font-bold mb-4">Ready to Go Solar?</h3>
               <p className="opacity-90 mb-6">Get a free site survey and quote for your property in Vadodara</p>
               <a
-                href="tel:+916353583148"
+                href="tel:+919033451995"
                 className="inline-block bg-white text-orange-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors"
               >
-                Call Now: +91-6353583148
+                Call Now: +91-9033451995
               </a>
             </div>
           </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { BusinessConfig, getAreaDisplayName } from "@/lib/business-config";
 import { Sparkles } from "lucide-react";
 
@@ -20,11 +21,12 @@ const solarFormConfig = {
     { name: "mobile", label: "Mobile Number", type: "tel", required: true },
     { name: "requirement", label: "Requirement", type: "select", options: ["Residential", "Commercial", "Industrial"], required: false },
     { name: "systemSize", label: "System Size", type: "select", options: ["1-3 KW", "3-5 KW", "5-10 KW", "10+ KW"], required: false },
+    { name: "message", label: "Anything specific we should know?", type: "textarea", required: false },
   ],
 };
 
 // Business metadata for solar installation
-const solarMeta = { emoji: "☀️", phone: "916353583148", domain: "vadodarasolar.in" };
+const solarMeta = { phone: "919033451995", domain: "solarinstallationvadodara.in" };
 
 export function HeroForm({ business, area, keyword }: HeroFormProps) {
   const config = solarFormConfig;
@@ -40,17 +42,17 @@ export function HeroForm({ business, area, keyword }: HeroFormProps) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    let message = `${meta.emoji} *SOLAR INSTALLATION ENQUIRY*\n\n`;
-    
+    let message = `*New Solar Installation Enquiry*\n\n`;
+
     config.fields.forEach((field) => {
       if (formData[field.name]) {
-        message += `• *${field.label}:* ${formData[field.name]}\n`;
+        message += `*${field.label}:* ${formData[field.name]}\n`;
       }
     });
-    
-    message += `📍 *Area:* ${locationText}\n`;
-    if (keyword) message += `🔍 *Interest:* ${keyword}\n`;
-    message += `\n_From: ${meta.domain}_`;
+
+    message += `*Area:* ${locationText}\n`;
+    if (keyword) message += `*Interest:* ${keyword}\n`;
+    message += `\n_Enquiry via ${meta.domain}_`;
 
     const whatsappURL = `https://wa.me/${meta.phone}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
@@ -95,6 +97,15 @@ export function HeroForm({ business, area, keyword }: HeroFormProps) {
                   </button>
                 ))}
               </div>
+            ) : field.type === "textarea" ? (
+              <Textarea
+                placeholder="e.g. roof type, monthly bill, best time to call..."
+                value={formData[field.name] || ""}
+                onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
+                required={field.required}
+                rows={3}
+                className="text-base px-4 py-3 resize-none"
+              />
             ) : (
               <Input
                 type={field.type}

@@ -49,7 +49,7 @@ export function BusinessNav({ currentBusiness, currentArea }: BusinessNavProps) 
                   {allAreas.map((area) => (
                     <Link
                       key={area}
-                      href={`/solar-installation/${area}`}
+                      href={`/${area}`}
                       className={cn(
                         "block px-4 py-2 hover:bg-gray-100 transition-colors",
                         currentArea === area && "bg-gray-100 font-semibold"
@@ -107,7 +107,7 @@ export function BusinessNav({ currentBusiness, currentArea }: BusinessNavProps) 
                 {allAreas.map((area) => (
                   <Link
                     key={area}
-                    href={`/solar-installation/${area}`}
+                    href={`/${area}`}
                     className="text-sm py-1 text-gray-700 hover:underline"
                     onClick={() => setMobileMenuOpen(false)}
                   >

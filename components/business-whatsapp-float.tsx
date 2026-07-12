@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { BusinessConfig, getAreaDisplayName } from "@/lib/business-config";
 
 interface BusinessWhatsAppFloatProps {
@@ -54,12 +55,8 @@ const formConfigs: Record<string, {
     fields: [
       { name: "fullName", label: "Full Name", type: "text", required: true },
       { name: "mobile", label: "Mobile Number", type: "tel", required: true },
-      { name: "monthlyBill", label: "Monthly Electricity Bill", type: "select", options: ["Under ₹2,000", "₹2,000 - ₹5,000", "₹5,000 - ₹10,000", "Above ₹10,000"], required: true },
-      { name: "roofType", label: "Roof / Ownership", type: "select", options: ["Own House", "Rented", "Society / Flat", "Open Land"], required: true },
-      { name: "requirement", label: "Requirement", type: "select", options: ["Residential", "Commercial", "Industrial"], required: true },
-      { name: "systemSize", label: "System Size", type: "select", options: ["1-3 KW", "3-5 KW", "5-10 KW", "10+ KW"], required: true },
-      { name: "timeline", label: "When do you want to install?", type: "select", options: ["Immediately", "Within 1 Month", "Just Exploring"], required: true },
-      { name: "contactTime", label: "Best Time to Contact You", type: "select", options: ["Morning", "Afternoon", "Evening"], required: true },
+      { name: "service", label: "Service Required", type: "select", options: ["Residential Solar", "Commercial Solar", "Industrial Solar", "Solar Maintenance", "Other"], required: true },
+      { name: "requirement", label: "Requirement", type: "textarea", required: true },
     ],
   },
   "skin-hair": {
@@ -216,6 +213,14 @@ export function BusinessWhatsAppFloat({ business, area, keyword }: BusinessWhats
                       </button>
                     ))}
                   </div>
+                ) : field.type === "textarea" ? (
+                  <Textarea
+                    placeholder={`Enter your ${field.label.toLowerCase()}`}
+                    value={formData[field.name] || ""}
+                    onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
+                    required={field.required}
+                    className="min-h-[100px] resize-none"
+                  />
                 ) : (
                   <Input
                     type={field.type}

@@ -8,6 +8,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const areaName = getAreaDisplayName(area);
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/solar-installation-in-fatehgunj-vadodara",
+  },
   title: `#1 Solar Installation in Fatehgunj, Vadodara | ₹78,000 Subsidy`,
   description: `🌞 Premium solar installation in Fatehgunj, Vadodara! Join 500+ happy Fatehgunj residents. ₹78,000 govt subsidy, 25-year warranty, zero down payment. Local experts, same-day survey! 📞 Call now!`,
   keywords: [

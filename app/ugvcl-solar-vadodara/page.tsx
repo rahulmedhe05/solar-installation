@@ -8,6 +8,9 @@ const keyword = getKeywordBySlug("ugvcl-solar-vadodara")!;
 const business = getBusinessBySlug("solar-installation")!;
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/ugvcl-solar-vadodara",
+  },
   title: `${keyword.title} | Best Solar Company in Vadodara`,
   description: keyword.description,
   keywords: keyword.keywords,

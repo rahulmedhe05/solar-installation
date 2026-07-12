@@ -7,6 +7,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const content = getBusinessContent("solar-installation", "solar-installation-in-vadodara");
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in",
+  },
   title: `#1 Solar Panel Installation in Vadodara | ₹78,000 Subsidy | SolarVadodara`,
   description: `🌞 Transform your rooftop into a powerhouse! Vadodara's most trusted solar company with 5000+ installations. Get ₹78,000 PM Surya Ghar subsidy, 25-year warranty & ZERO electricity bills. MNRE approved. Free site survey! ☎️ +91-9033451995`,
   keywords: [

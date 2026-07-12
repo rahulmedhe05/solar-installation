@@ -7,6 +7,9 @@ import { BusinessWhatsAppFloat } from "@/components/business-whatsapp-float";
 import { Calendar, Clock, User, ArrowRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/blog",
+  },
   title: "Solar Energy Blog | Tips, Guides & News | SolarInstallationVadodara.in",
   description: "Expert solar energy tips, installation guides, government subsidy updates, and industry news for Vadodara. Learn about solar panels, savings, and green energy.",
   keywords: "solar blog, solar tips vadodara, solar guide, solar installation guide, solar subsidy news, pm surya ghar updates",

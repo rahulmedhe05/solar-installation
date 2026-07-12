@@ -331,9 +331,9 @@ For most Vadodara residents, we recommend:
   },
 
   "best-solar-panel-brands-india-2026": {
-    title: "Top 10 Best Solar Panel Brands in India 2026 - Expert Review",
+    title: "Top 5 Best Solar Panel Brands in India 2026 (Price List & Subsidy)",
     h1: "Best Solar Panel Brands in India 2026: Expert Review & Comparison",
-    metaDescription: "Comprehensive review of best solar panel brands in India - Tata, Waaree, Adani, Loom Solar, Vikram Solar. Compare efficiency, warranty, and prices.",
+    metaDescription: "⚡ Compare the best solar panel brands in India for 2026 (Tata, Waaree, Adani, Luminous). Check pricing, efficiency ratings, and subsidy eligibility. Read our expert review!",
     image: "https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1200&h=600&fit=crop",
     category: "Reviews",
     author: "Solar Expert Team",
@@ -1023,6 +1023,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: `${post.title} | SolarInstallationVadodara.in Blog`,
     description: post.metaDescription,
+    alternates: {
+      canonical: `https://solarinstallationvadodara.in/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.metaDescription,

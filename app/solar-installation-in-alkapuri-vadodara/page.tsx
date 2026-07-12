@@ -8,6 +8,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const areaName = getAreaDisplayName(area);
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/solar-installation-in-alkapuri-vadodara",
+  },
   title: `#1 Solar Installation in Alkapuri, Vadodara | ₹78,000 Subsidy`,
   description: `🌞 Premium solar installation in Alkapuri, Vadodara! Join 500+ happy Alkapuri residents. ₹78,000 govt subsidy, 25-year warranty, zero down payment options. Local experts, same-day survey! 📞 Call now!`,
   keywords: [

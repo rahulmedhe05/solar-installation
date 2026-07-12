@@ -8,6 +8,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const areaName = getAreaDisplayName(area);
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/solar-installation-in-vadodara",
+  },
   title: `Best Solar Installation in Vadodara | #1 Solar Company | Top Rated Services`,
   description: `Looking for the best solar installation in Vadodara? Get professional solar panel installation services with government subsidies up to ₹78,000. GUVNL empaneled installer with 2000+ installations. Call now for free consultation!`,
   keywords: [

@@ -8,6 +8,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const areaName = getAreaDisplayName(area);
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/solar-installation-in-ellora-park-vadodara",
+  },
   title: `#1 Solar Installation in Ellora Park, Vadodara | ₹78,000 Subsidy`,
   description: `🌞 Premium solar installation in Ellora Park, Vadodara! Join 500+ happy Ellora Park residents. ₹78,000 govt subsidy, 25-year warranty, zero down payment. Local experts, same-day survey! 📞 Call now!`,
   keywords: [

@@ -8,6 +8,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const areaName = getAreaDisplayName(area);
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/solar-installation-in-makarpura-vadodara",
+  },
   title: `Commercial Solar Installation Makarpura, Vadodara | Industrial Power`,
   description: `🏭 Industrial & commercial solar in Makarpura, Vadodara! 50kW-500kW systems for factories. 80% depreciation benefit, quick ROI. EPC solutions, net metering. Get industrial quote!`,
   keywords: [

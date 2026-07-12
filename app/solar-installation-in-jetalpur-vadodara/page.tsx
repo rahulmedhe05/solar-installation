@@ -8,6 +8,9 @@ const business = getBusinessBySlug("solar-installation")!;
 const areaName = getAreaDisplayName(area);
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://solarinstallationvadodara.in/solar-installation-in-jetalpur-vadodara",
+  },
   title: `Best Solar Installation in Jetalpur, Vadodara | Top Rated Solar Company`,
   description: `Looking for the best solar installation in Jetalpur, Vadodara? Get professional solar panel installation services with government subsidies up to ₹78,000. Expert installation, 25-year warranty. Call now!`,
   keywords: [

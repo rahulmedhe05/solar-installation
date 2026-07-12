@@ -93,12 +93,12 @@ export function MegaFooter() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <Link href="/" className="text-gray-400 hover:text-orange-400 transition-colors">Home</Link>
-            <Link href="/solar-panel-installation-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">About Us</Link>
+            <Link href="/solar-panel-installation-services-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">About Us</Link>
             <Link href="/blog" className="text-gray-400 hover:text-orange-400 transition-colors">Blog</Link>
             <Link href="/solar-panel-price-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Price Guide</Link>
-            <Link href="/govt-solar-subsidy-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Govt Subsidy</Link>
-            <Link href="/solar-rooftop-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Rooftop Solar</Link>
-            <Link href="/solar-for-home-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Home Solar</Link>
+            <Link href="/solar-subsidy-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Govt Subsidy</Link>
+            <Link href="/rooftop-solar-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Rooftop Solar</Link>
+            <Link href="/solar-system-for-home-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Home Solar</Link>
             <Link href="/commercial-solar-vadodara" className="text-gray-400 hover:text-orange-400 transition-colors">Commercial Solar</Link>
             <a href="#contact" className="text-gray-400 hover:text-orange-400 transition-colors">Contact</a>
           </div>

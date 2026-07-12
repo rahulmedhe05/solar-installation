@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
 import { SEO_CONFIG } from "@/lib/seo-config";
+import { blogPostsList } from "@/lib/blog-data";
 
 function getAllRoutes(): string[] {
   const appDir = path.join(process.cwd(), "app");
@@ -94,7 +95,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "service",
   ];
 
-  return allRoutes.map((route) => {
+  const staticSitemap = allRoutes.map((route) => {
     let priority = 0.7;
     let changeFrequency: "daily" | "weekly" | "monthly" = "weekly";
 
@@ -120,4 +121,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority,
     };
   });
+
+  // Dynamically add all blog post routes
+  const blogSitemap = blogPostsList.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticSitemap, ...blogSitemap];
 }

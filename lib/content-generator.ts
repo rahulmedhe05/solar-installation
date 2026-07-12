@@ -208,15 +208,135 @@ export interface KeywordPageContent {
   processSteps: { title: string; description: string }[];
 }
 
+const keyTakeaways: Record<string, string> = {
+  "solar-panel-price-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    The average cost of a <strong>3kW residential solar system in Vadodara is ₹1,17,000</strong> after applying the maximum government subsidy of <strong>₹78,000</strong> (gross price is ₹1,95,000). A 1kW system starts at <strong>₹45,000</strong> after a ₹30,000 subsidy. Homeowners typically achieve a full return on investment (ROI) within 3 to 4 years, enjoying free electricity thereafter.
+  </p>
+</div>
+`,
+  "solar-subsidy-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    Under the PM Surya Ghar Muft Bijli Yojana, residential subsidies in Vadodara are: <strong>₹30,000 for 1kW</strong>, <strong>₹60,000 for 2kW</strong>, and a maximum of <strong>₹78,000 for 3kW and above</strong>. Commercial and industrial properties do not qualify for direct consumer subsidies, but can claim a 40% accelerated depreciation tax benefit.
+  </p>
+</div>
+`,
+  "pm-surya-ghar-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    The PM Surya Ghar Muft Bijli Yojana allows Vadodara residents to claim up to <strong>₹78,000 in central government subsidy</strong> for rooftop solar installations. The scheme is designed to provide <strong>300 units of free electricity per month</strong>. Homeowners must use a GUVNL-empanelled vendor like us to qualify for the subsidy disbursement.
+  </p>
+</div>
+`,
+  "solar-net-metering-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    Net metering with UGVCL/MGVCL in Vadodara allows you to export surplus electricity back to the grid. UGVCL pays a GERC-approved tariff of <strong>₹2.25 per unit</strong> for net excess power exported at the end of the annual settlement cycle. The bidirectional net meter is provided and installed by UGVCL/MGVCL.
+  </p>
+</div>
+`
+};
+
+const pricingTableHTML = `
+<h3 class="text-2xl font-bold mt-8 mb-4">Vadodara Solar Panel Price List 2026 (Before vs. After Subsidy)</h3>
+<p class="mb-4">Here is the detailed cost breakdown for rooftop solar systems in Vadodara including GUVNL empanelled installer support, net metering, and GEDA approvals:</p>
+
+<div class="overflow-x-auto my-8 border border-gray-200 rounded-xl shadow-sm">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">System Size</th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Sanctioned Load</th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Gross Cost (Before Subsidy)</th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Govt Subsidy Benefit</th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Net Cost (After Subsidy)</th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Est. Payback (ROI)</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200 text-sm text-gray-700">
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 whitespace-nowrap font-semibold text-blue-900">1 kW System</td>
+        <td class="px-6 py-4 whitespace-nowrap">1 kW</td>
+        <td class="px-6 py-4 whitespace-nowrap">₹75,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">-₹30,000</td>
+        <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">₹45,000</td>
+        <td class="px-6 py-4 whitespace-nowrap">3.0 Years</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 whitespace-nowrap font-semibold text-blue-900">2 kW System</td>
+        <td class="px-6 py-4 whitespace-nowrap">2 kW</td>
+        <td class="px-6 py-4 whitespace-nowrap">₹1,40,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">-₹60,000</td>
+        <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">₹80,000</td>
+        <td class="px-6 py-4 whitespace-nowrap">3.2 Years</td>
+      </tr>
+      <tr class="bg-orange-50/50 hover:bg-orange-50 font-medium">
+        <td class="px-6 py-4 whitespace-nowrap font-bold text-orange-600">3 kW System (Best Value)</td>
+        <td class="px-6 py-4 whitespace-nowrap">3 kW</td>
+        <td class="px-6 py-4 whitespace-nowrap">₹1,95,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-green-600 font-bold">-₹78,000 (Max)</td>
+        <td class="px-6 py-4 whitespace-nowrap font-extrabold text-gray-900">₹1,17,000</td>
+        <td class="px-6 py-4 whitespace-nowrap">3.5 Years</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 whitespace-nowrap font-semibold text-blue-900">5 kW System</td>
+        <td class="px-6 py-4 whitespace-nowrap">5 kW</td>
+        <td class="px-6 py-4 whitespace-nowrap">₹3,00,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">-₹78,000</td>
+        <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">₹2,22,000</td>
+        <td class="px-6 py-4 whitespace-nowrap">4.0 Years</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="px-6 py-4 whitespace-nowrap font-semibold text-blue-900">10 kW System</td>
+        <td class="px-6 py-4 whitespace-nowrap">10 kW</td>
+        <td class="px-6 py-4 whitespace-nowrap">₹5,50,000</td>
+        <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">-₹78,000</td>
+        <td class="px-6 py-4 whitespace-nowrap font-bold text-gray-900">₹4,72,000</td>
+        <td class="px-6 py-4 whitespace-nowrap">4.5 Years</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 export function getKeywordContent(keyword: KeywordConfig): KeywordPageContent {
-  return {
-    heroTitle: keyword.h1,
-    heroSubtitle: keyword.metaDescription,
-    aboutContent: `Looking for ${keyword.title.toLowerCase()}? You've come to the right place! We are Vadodara's leading solar installation company, specializing in ${keyword.title.toLowerCase()}. With over 15 years of experience and 5000+ successful installations, we provide premium quality solar solutions at the best prices in Gujarat.
+  let aboutContent = `Looking for ${keyword.title.toLowerCase()}? You've come to the right place! We are Vadodara's leading solar installation company, specializing in ${keyword.title.toLowerCase()}. With over 15 years of experience and 5000+ successful installations, we provide premium quality solar solutions at the best prices in Gujarat.
 
 Our team of MNRE certified professionals ensures that every installation meets the highest standards of quality and safety. We use only the best solar panels from top brands like Adani, Tata, Waaree, and Loom Solar, backed by 25-year performance warranties.
 
-Whether you need a small 1kW system for your home or a large 500kW industrial solar plant, we have the expertise to handle projects of any scale. Our end-to-end service includes free site survey, custom system design, professional installation, government subsidy assistance, and comprehensive after-sales support.`,
+Whether you need a small 1kW system for your home or a large 500kW industrial solar plant, we have the expertise to handle projects of any scale. Our end-to-end service includes free site survey, custom system design, professional installation, government subsidy assistance, and comprehensive after-sales support.`;
+
+  // Inject Key Takeaway callout box at the top if defined
+  const takeaway = keyTakeaways[keyword.slug];
+  if (takeaway) {
+    aboutContent = takeaway + "\n" + aboutContent;
+  }
+
+  // Inject styled pricing table for price page
+  if (keyword.slug === "solar-panel-price-vadodara") {
+    aboutContent += "\n" + pricingTableHTML;
+  }
+
+  // Inject internal links to "Solar for Flats" page
+  if (
+    keyword.slug === "solar-system-for-home-vadodara" ||
+    keyword.slug === "rooftop-solar-vadodara" ||
+    keyword.slug === "residential-solar-vadodara" ||
+    keyword.slug === "solar-panel-price-vadodara"
+  ) {
+    aboutContent += `\n\n🏢 **Apartment Solar Solutions:** If you reside in a high-rise building or apartment complex in Vadodara, you can still transition to solar energy. Read our specialized guide on <a href="/solar-for-flat-vadodara" class="text-orange-600 hover:underline font-semibold">solar system for flats in Vadodara</a> to explore shared rooftop options and balcony solar panels.`;
+  }
+
+  return {
+    heroTitle: keyword.h1,
+    heroSubtitle: keyword.metaDescription,
+    aboutContent,
     whyChooseUs: [
       "MNRE & GEDA Approved Installer - Eligible for Government Subsidies",
       "15+ Years Experience in Solar Industry",

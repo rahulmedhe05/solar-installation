@@ -240,6 +240,30 @@ const keyTakeaways: Record<string, string> = {
     Net metering with UGVCL/MGVCL in Vadodara allows you to export surplus electricity back to the grid. UGVCL pays a GERC-approved tariff of <strong>₹2.25 per unit</strong> for net excess power exported at the end of the annual settlement cycle. The bidirectional net meter is provided and installed by UGVCL/MGVCL.
   </p>
 </div>
+`,
+  "solar-inverter-shop-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    We are Vadodara's authorized dealer and service centre for all major solar inverter brands including <strong>Luminous, Growatt, SolarEdge, Fronius, Delta, and Sungrow</strong>. On-grid string inverters start from <strong>₹8,000/kW</strong>, while hybrid inverters with battery management start from <strong>₹18,000/kW</strong>. We also offer same-day inverter repair and AMC services.
+  </p>
+</div>
+`,
+  "luminous-solar-panel-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    Luminous solar panels are available in Vadodara starting from <strong>₹23–27 per watt</strong>. Their popular NXG series (380W–440W) offers <strong>19–21% efficiency</strong> with a 25-year linear performance warranty. Compared to Tata Solar or Waaree, Luminous panels are priced slightly lower and are ideal for budget-conscious residential buyers who also want the reliability of a Luminous inverter in a single-brand system.
+  </p>
+</div>
+`,
+  "solar-panel-loan-vadodara": `
+<div class="bg-orange-50 border-l-4 border-orange-500 p-6 my-6 rounded-r-xl shadow-sm">
+  <p class="text-orange-800 font-bold text-lg mb-2">⚡ Direct Answer (Key Takeaway):</p>
+  <p class="text-gray-700 text-base leading-relaxed">
+    Solar panel loans in Vadodara are available from <strong>SBI, Bank of Baroda, HDFC, and approved NBFCs</strong> under the PM Surya Ghar scheme. After applying the ₹78,000 government subsidy, a 3kW system costing ₹1,17,000 can be financed at an EMI of approx. <strong>₹1,800–₹2,200/month over 5 years</strong> at 7–9% interest. We assist you with the complete loan paperwork at no extra cost.
+  </p>
+</div>
 `
 };
 

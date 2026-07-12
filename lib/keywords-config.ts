@@ -162,6 +162,13 @@ export const solarKeywords: KeywordConfig[] = [
 
   // Government/Utility Keywords
   { slug: "ugvcl-solar-vadodara", title: "UGVCL Solar Connection Vadodara | Net Metering Help", h1: "UGVCL Solar Connection in Vadodara – Complete Assistance", metaDescription: "📋 UGVCL solar connection made easy! We handle complete net metering application in Vadodara. Paperwork, inspection, approval – all sorted. Get connected fast!", description: "UGVCL solar connection & net metering in Vadodara. Complete assistance for UGVCL solar rooftop application.", keywords: ["UGVCL solar vadodara", "UGVCL net metering", "UGVCL solar connection", "UGVCL application help"] },
+
+  // New pages targeting high-impression uncovered queries
+  { slug: "solar-inverter-shop-vadodara", title: "Solar Inverter Shop in Vadodara | Best Brands & Repair", h1: "Solar Inverter Shop in Vadodara – All Brands, Sales & Repair", metaDescription: "⚡ Top solar inverter shop in Vadodara! Luminous, Growatt, SolarEdge, Fronius, Delta inverters. Sales, installation & repair. On-grid, off-grid & hybrid. Visit us or call now!", description: "Best solar inverter shop in Vadodara. Sales, installation & repair of all major inverter brands. On-grid, off-grid & hybrid inverters available.", keywords: ["solar inverter shop vadodara", "inverter shop vadodara", "inverter dealers vadodara", "solar inverter repair vadodara", "best inverter vadodara"] },
+
+  { slug: "luminous-solar-panel-vadodara", title: "Luminous Solar Panels Vadodara | Price & Dealers 2026", h1: "Luminous Solar Panels in Vadodara – Authorized Dealer & Best Price", metaDescription: "🌟 Luminous solar panels in Vadodara at best price! Authorized dealer for NXG, Shakti & Rapid series. Compare vs Tata & Waaree. Get quotes + subsidy help!", description: "Luminous solar panel dealer in Vadodara. Best price on Luminous NXG, Shakti & Rapid series panels with installation & subsidy assistance.", keywords: ["luminous solar panel vadodara", "luminous solar dealer vadodara", "luminous NXG panel price", "luminous solar panel price 2026"] },
+
+  { slug: "solar-panel-loan-vadodara", title: "Solar Panel Loan in Vadodara | EMI from ₹1,500/month", h1: "Solar Panel Loan in Vadodara – Easy EMI & Zero-Cost Finance Options", metaDescription: "💳 Solar loan in Vadodara starting at ₹1,500/month! Zero down payment options, SBI & HDFC approved. Cover cost after subsidy with easy EMI. Apply in 24 hours!", description: "Solar panel loan & EMI options in Vadodara. SBI, HDFC & NBFC approved solar loans with zero down payment. Easy EMI starting ₹1,500/month.", keywords: ["solar panel loan vadodara", "solar loan vadodara", "solar EMI vadodara", "solar financing vadodara", "solar panel on EMI"] },
 ];
 
 // Master keyword map by business slug
